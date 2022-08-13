@@ -1,4 +1,4 @@
-page = open('site_arquivo_py/index002.html', 'w')
+page = open('HTML-cm-Python/index002.html', 'w')
 page.write('''
 <html lang="pt-br">
 <header>
@@ -14,6 +14,7 @@ page.write('''
 <p>Lista de contagem de 10 numeros</p>
 ''')
 
+# Marcadores: %d -> int, %s -> str, %f -> float
 for c in range(10):
     page.write('<p>%d</p>\n' % c)
 page.write('''

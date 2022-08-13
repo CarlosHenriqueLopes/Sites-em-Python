@@ -6,7 +6,7 @@ filmes = {
     'Acao': ['filme1', 'filme2', 'filme3']
 }
 
-page = open('site_arquivo_py/index003.html', 'w')
+page = open('HTML-cm-Python/index003.html', 'w')
 
 page.write('''
 <html lang="pt-br">
@@ -22,6 +22,8 @@ page.write('''
 
 <h1>Dicionario de filmes</h1>
 ''')
+
+# Marcadores: %d -> int, %s -> str, %f -> float
 for k, v in filmes.items():
     page.write('<h2>%s</h2>' % k)
     for c in v:
