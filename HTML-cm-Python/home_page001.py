@@ -12,7 +12,10 @@ page.write('<body>\n')
 
 page.write('<p>Lista de contagem de 10 numeros</p>\n')
 
-# Marcadores: %d -> int, %s -> str, %f -> float
+# Marcadores:
+# %d -> int
+# %s -> str
+# %f -> float
 for c in range(10):
     page.write('<p>%d</p>\n' % c)
 page.write('</body>\n')
